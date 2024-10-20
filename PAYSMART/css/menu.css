@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+ 
+}
+
+/* menu----------------------------------------------------------------- */
+
+
+  .nav_trsp{
+    width: 100%;
+    height: 50px;
+    background-color: #0005;
+    line-height: 50px;
+    position: fixed;
+    z-index: 40;
+  }
+  .nav_trsp ul{
+    float: right;
+    margin-right: 100px;
+    font-weight: bold;
+  }
+  .nav_trsp ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+    font-size: 20px; 
+  }
+  .nav_trsp ul li:hover{
+    background-color:#0a5275;
+  }
+  .nav_trsp ul li a{
+    text-decoration: none;
+    color:#063146;
+    padding: 30px;
+  }
+  .icon_size
+  {
+    font-size: 30px;
+  }
+
+
+
+/* sidebar----------------------------------------------------------------- */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  z-index: 50;
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+   background: #c1f0fe;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 15px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+  position: absolute;
+  z-index: 50;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+  position: fixed;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+  position: fixed;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+  position: fixed;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+
+
+
+/*card border ---------------------------------------------------------------------------------------------------*/
+.box_number{
+  /* overflow:auto; */
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  padding: 20px;
+  /* margin: 30px auto; */
+  border-style: solid;
+  border-color: #0a5275;
+
+  border-width: 4px;
+   /* is the ta9am9om if its just 2 value is the first value for the 1 and the 3 and the second for the 2 and 4 */
+   border-radius: 40px;
+   box-shadow: 1px 1px 15px #0a5275;
+}
+.user-count1 {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #0a5275; /* Pink color for "Nombre d'utilisateurs" */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.user-count1 strong {
+  font-weight: bold;
+  font-size: 24px; /* Larger font size for the number */
+  color: black; /* Black color for the number */
+}
+
+/*date input*/
+
+
+.date-input {
+  position: relative;
+}
+
+.date-input input {
+  padding-right: 30px; /* Ajustez la valeur selon vos besoins */
+}
+
+.date-input i {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Ajustez la valeur selon vos besoins */
+  transform: translateY(-50%);
+  font-size: 16px; /* Ajustez la taille de l'icône selon vos besoins */
+  color: #999; /* Ajustez la couleur de l'icône selon vos besoins */
+  cursor: pointer;
+
+}
+/* button modifier profile css*/
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0a5275;
+  /* background-color: #5e72e4; */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style au survol du bouton */
+.button:hover {
+  background-color: #5e72e4;
+}
